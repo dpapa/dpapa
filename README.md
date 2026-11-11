@@ -8,12 +8,6 @@ podaci se spremaju u `localStorage` preglednika. Sučelje je u izgledu terminala
 
 Potreban je Node.js 18 ili noviji.
 
-```bash
-npm install
-npm run dev      # razvojni poslužitelj (http://localhost:5173)
-npm run build    # produkcijski build u mapi dist/
-npm run preview  # pregled produkcijskog builda
-```
 
 ## Funkcionalnosti
 
@@ -55,5 +49,4 @@ Spremaju se u `localStorage` pod ključevima `nw_korisnici` i `nw_pretplate`.
 - **korisnik:** `sifra`, `ime`, `prezime`, `adresa`, `mjesto`, `telefon`, `email`, `korisnickoIme`, `ipAdresa`, `macAdresa`, `modelOpreme`, `datumPrikljucenja`, `status`, `napomena`
 - **pretplata:** `sifra`, `korisnik` (šifra korisnika), `paket`, `brzina`, `datumPocetka`, `datumZavrsetka`, `trajanje` (mjeseci), `cijena`, `placeno`, `datumPlacanja`, `placeniIznos`, `nacinPlacanja`
 
-Odnos je 1 : N – jedan korisnik može imati više pretplata. Datumi demo pretplata računaju se od
-današnjeg dana. Za povratak na demo podatke obriši oba ključa u alatima preglednika (Application → Local Storage).
+Odnos je 1 : N – jedan korisnik može imati više pretplata. 
